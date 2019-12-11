@@ -6,6 +6,13 @@ using UnityEngine.Experimental.Rendering;
 
 public class MyPipeline : RenderPipeline
 {
+    CullResults cull;
+
+    CommandBuffer cameraBuffer = new CommandBuffer
+    {
+        name = "Render Camera"
+    };
+
     public override void Render(ScriptableRenderContext renderContext, Camera[] cameras)
     {
         base.Render(renderContext, cameras);
@@ -18,22 +25,22 @@ public class MyPipeline : RenderPipeline
 
     void Render(ScriptableRenderContext context, Camera camera)
     {
-        ScriptableCullingParameters cullingParameters;
-        if (!CullResults.GetCullingParameters(camera, out cullingParameters))
+        if (!CullResults.GetCullingParameters(camera, out ScriptableCullingParameters cullingParameters))
             return;
-        CullResults cull = CullResults.Cull(ref cullingParameters, context);
+        CullResults.Cull(ref cullingParameters, context, ref cull);
 
         context.SetupCameraProperties(camera);
-
-        var buffer = new CommandBuffer { name = camera.name };
-        CameraClearFlags clearFlags = camera.clearFlags;
-        buffer.ClearRenderTarget(
-            (clearFlags & CameraClearFlags.Depth) != 0,
-            (clearFlags & CameraClearFlags.Color) != 0,
+        
+        var clearFlags = camera.clearFlags;
+        cameraBuffer.ClearRenderTarget(
+            clearFlags.HasFlag(CameraClearFlags.Depth),
+            clearFlags.HasFlag(CameraClearFlags.Color),
             camera.backgroundColor
         );
-        context.ExecuteCommandBuffer(buffer);
-        buffer.Release();
+        context.ExecuteCommandBuffer(cameraBuffer);
+        cameraBuffer.Clear();
+
+        cameraBuffer.BeginSample("Render Sample");
 
         // draw settings for the unlit pass
         var drawSettings = new DrawRendererSettings(camera, new ShaderPassName("SRPDefaultUnlit"));
