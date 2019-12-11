@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 144432875}
   - component: {fileID: 144432874}
   m_Layer: 0
-  m_Name: Sphere (9)
+  m_Name: UnlitColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 306802845}
   - component: {fileID: 306802844}
   m_Layer: 0
-  m_Name: Sphere (6)
+  m_Name: UnlitTransparent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -361,7 +361,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &328167891
 GameObject:
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 328167893}
   - component: {fileID: 328167892}
   m_Layer: 0
-  m_Name: Sphere (5)
+  m_Name: UnlitTransparent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -452,7 +452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &405989681
 GameObject:
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 405989683}
   - component: {fileID: 405989682}
   m_Layer: 0
-  m_Name: Sphere (3)
+  m_Name: UnlitColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,7 +543,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &424388741
 GameObject:
@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 424388743}
   - component: {fileID: 424388742}
   m_Layer: 0
-  m_Name: Sphere (4)
+  m_Name: StandardColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -634,7 +634,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534669902
 GameObject:
@@ -731,7 +731,7 @@ GameObject:
   - component: {fileID: 693593282}
   - component: {fileID: 693593281}
   m_Layer: 0
-  m_Name: Sphere (8)
+  m_Name: StandardColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -807,7 +807,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1170902435
 GameObject:
@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 1170902437}
   - component: {fileID: 1170902436}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: StandardTransparent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -898,7 +898,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1564957138
 GameObject:
@@ -913,7 +913,7 @@ GameObject:
   - component: {fileID: 1564957140}
   - component: {fileID: 1564957139}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: UnlitColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,7 +1004,7 @@ GameObject:
   - component: {fileID: 1656073839}
   - component: {fileID: 1656073838}
   m_Layer: 0
-  m_Name: Sphere (2)
+  m_Name: StandardColor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1080,7 +1080,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2019958518
 GameObject:
@@ -1095,7 +1095,7 @@ GameObject:
   - component: {fileID: 2019958520}
   - component: {fileID: 2019958519}
   m_Layer: 0
-  m_Name: Sphere (7)
+  m_Name: StandardTransparent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1171,5 +1171,5 @@ Transform:
   m_LocalScale: {x: 1.3819, y: 1.3819, z: 1.3819}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
